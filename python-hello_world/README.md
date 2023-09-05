@@ -7,3 +7,4 @@ Python has a linter / style guide, called PEP8, also now known as PyCode. At Hol
 Enjoy!
 
 - Guillaume
+
