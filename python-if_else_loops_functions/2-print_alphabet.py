@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-n = 0
-if n == 0:
-    print("a b c d e f g h i j k l m n o p q r s t u v w x y z")
-
+for i in range(65, 91):
+    print(chr(i).lower(), end=' ')
