@@ -1,23 +1,12 @@
 #!/usr/bin/python3
 from sys import argv
-if __name == "__main__":
+if __name__ == "__main__":
+def main():
     args = len(argv)
     if args == 1:
         print(("0 arguments."))
     else:
-        print("{} {}:".format(args -1,
-            "argument" if args ==2 else "arguments"))
+        print("{} {}:".format(args - 1,
+                              "argument" if args == 2 else "arguments"))
     for i in range(1, args):
-        print"{}: {}.format(i, argv[i]))
-
-def function("Hello Welcome To The Best School"):
-    
-    return len(argv)
-
-i = len(argv)
-if i < 2:
-    print("argument :")
-elif i >= 2:
-    print("arguments :")
-elif i == 0:
-    print(".")
+        print("{}: {}".format(i, argv[i]))
