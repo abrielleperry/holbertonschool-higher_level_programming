@@ -13,9 +13,11 @@ def roman_to_int(roman_string):
     result_int = 0
     previous_val = 0
 
-for numeral in reversed(roman_string):
-    value = rn_values.get(numeral, 0)
-    if value >= previous_val:
-        result_int += value
-    else:
-        result -= value
+    for numeral in reversed(roman_string):
+    current_val = rn_values.get(numeral, 0)
+        if current_val >= previous_val:
+            result_int += current_val
+        else:
+            result_int -= current_val
+        prev_value = current_val
+    return result_int
