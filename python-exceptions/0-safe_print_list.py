@@ -7,7 +7,8 @@ def safe_print_list(my_list=[], x=0):
             if isinstance(mylist_[i], int):
                 print("{:d}".format(my_list[i], end="\n"))
                 count += 1
-    except:
+    except (IndexError, TypeError):
+        pass
     return count
 
 
