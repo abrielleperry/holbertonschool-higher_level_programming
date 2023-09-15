@@ -4,11 +4,7 @@
 class Square:
     """empty class to define Square"""
     def __init__(self, size=0):
-        for size:
-        try:
-            size == int
-            if size != int:
-                except: 
+        if isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
-                except: raise ValueError("size must be >= 0")
+            raise ValueError("size must be >= 0")
