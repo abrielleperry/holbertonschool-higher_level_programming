@@ -3,5 +3,17 @@
         "python-classes"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none",
+    "sshfs.configs": [
+        {
+            "name": "ubuntu",
+            "host": "f7ebe8104315.de53e942.hbtn-cod.io",
+            "username": "f7ebe8104315",
+            "password": "654cc10ae5b2690864d7"
+        }
+    ]
 }
