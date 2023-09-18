@@ -4,8 +4,9 @@
 
 class Square:
     """initializing a Sqaure object"""
-    def __init__(self, size = 0):
+    def __init__(self, size=0, position=(0, 0)):
         self.__size = size
+        self.position = position
 
     @property
     def size(self):
@@ -14,14 +15,15 @@ class Square:
     @size.setter
     def size(self, value):
         if not isinstance(value, int):
-            raise Type Error ("size must be >= 0")
+            raise TypeError("size must be >= 0")
         elif calue < 0:
             raise ValueError("size must be an interger")
         self.__size = value
+
     def area(self):
         return self.__size ** 2
-    
-    def __init__(self, position = 0)
+
+    def __init__(self, position=0):
         self.__position = position
 
     @property
