@@ -1,5 +1,6 @@
 #!/usr/bin/Python3
-"""This file will write a class Square defining a square based on 3-sqaure.py"""
+"""file will write a class Square defining a square based on 3-sqaure.py"""
+
 
 class Square:
     """initializing a Square object"""
@@ -23,4 +24,3 @@ class Square:
     def area(self):
         """returning area of square which is side length squared"""
         return self.__size ** 2
-
