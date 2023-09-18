@@ -1,5 +1,5 @@
 #!/usr/bin/Python3
-"""" this file writes a Square that defines a square by 2-square.py """
+""""this file writes a Square that defines a square by 2-square.py"""
 
 
 class Square:
@@ -12,5 +12,5 @@ class Square:
         self.__size = size
 
     def area(self):
-        return self.__size ** 2
-    """ returns area of current square """
+        return (self.__size * self.__size)
+    """returns area of current square"""
