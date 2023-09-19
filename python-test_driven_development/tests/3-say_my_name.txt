@@ -12,14 +12,14 @@ Correct use:
 =============================
 
 
-    >>> say_my_name("Abrielle", "Perry")
-    Abrielle Perry
+    >>> say_my_name("Abrielle ", "Perry")
+    My name is Abrielle Perry
 
-    >>> say_my_name("Opal", "Carrington")
-    Opal Carrington
+    >>> say_my_name("Opal ", "Carrington")
+    My name is Opal Carrington
 
     >>> say_my_name("Zach")
-    Zach
+    My name is Zach
 
     
 
@@ -29,29 +29,10 @@ Incorret Use:
 Testing if first_name was integer
 >>> say_my_name(7, "Perry")
 Traceback (most recent call last):
-TypeError: first_name must be string
+TypeError: first_name must be a string
 
 Testing if last_name was integer
->>> add_integer("Abriele", 7)
+>>> say_my_name("Abrielle", 7)
 Traceback (most recent call last):
-TypeError: last_name must be string
+TypeError: last_name must be a string
 
-Testing if float is infinitie
->>> add_integer(float('inf'), 3)
-Traceback (most recent call last):
-OverflowError: cannot convert float infinity to integer
-
-Testing if float is not a number
->>> add_integer(float('nan'), 3)
-Traceback (most recent call last):
-ValueError: cannot convert float NaN to integer
-
-Testing if no arguments are given
->>> add_integer()
-Traceback (most recent call last):
-TypeError: add_integer() missing 1 required positional argument: 'a'
-
-Testing if more than 2 arguments are given
->>> add_integer(3, 4, 5)
-Traceback (most recent call last):
-TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
