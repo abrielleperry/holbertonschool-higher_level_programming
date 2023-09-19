@@ -19,7 +19,7 @@ Correct use:
     My name is Opal Carrington
 
     >>> say_my_name("Zach")
-    My name is Zach
+    My name is Zach 
 
     
 
