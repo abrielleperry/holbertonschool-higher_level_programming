@@ -12,10 +12,10 @@ Correct use:
 =============================
 
 
-    >>> say_my_name("Abrielle ", "Perry")
+    >>> say_my_name("Abrielle", "Perry")
     My name is Abrielle Perry
 
-    >>> say_my_name("Opal ", "Carrington")
+    >>> say_my_name("Opal", "Carrington")
     My name is Opal Carrington
 
     >>> say_my_name("Zach")
