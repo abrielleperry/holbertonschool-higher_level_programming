@@ -3,6 +3,7 @@
 a square with the character #"""
 
 def print_square(size):
+    """print_square function take int and prints size of square with hash"""
     if not isinstance(size, (int, float)):
         raise TypeError("size must be an integer")
     if size < 0:
