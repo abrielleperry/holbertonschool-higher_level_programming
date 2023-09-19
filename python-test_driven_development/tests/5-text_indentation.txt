@@ -1,0 +1,36 @@
+The 5-text_indentation.txt module
+======================
+
+Using the  text_indentation function
+-------------------
+
+text_indentation adds 2 new lines after every ., ?, and : module:
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation = __import__('5-text_indentation').text_indentation
+
+Correct use:
+=============================
+
+
+>>> text_indentation("Hello. Tuesday")
+Hello.
+
+
+Tuesday
+
+
+>>> text_indentation("How are you? Good")
+How are you?
+
+Good
+
+    
+
+Incorret Use:
+===============================
+
+Testing if text was not string
+>>> text_indentation(7.77)
+Traceback(most recent call last):
+TypeError: text must be a string
+
