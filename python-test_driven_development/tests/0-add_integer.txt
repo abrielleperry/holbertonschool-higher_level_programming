@@ -1,0 +1,41 @@
+The 0-add_integer.py module
+======================
+
+Using the add_integer function
+-------------------
+
+add_integer returns 2 integers module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+
+Correct use:
+=============================
+
+    >>> add_integer(6)
+    104
+
+    >>> add_integer(8, 2)
+    10
+
+    >>> add_integer(98)
+    196
+
+    >>> add_integer(7.77, 5)
+    12
+
+    >>> add_integer(2.2, 8)
+    10
+
+Incorret Use:
+===============================
+
+Testing if a was string
+>>> add_integer("hello")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+Testing if be was a string
+>>> add_integer(7, "hello")
+Traceback (most recent call last):
+TypeError: b must be an integer
