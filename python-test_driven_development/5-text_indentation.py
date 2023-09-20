@@ -13,9 +13,8 @@ def text_indentation(text):
     for char in text:
         if char in [".", "?", ":"]:
             if check_newline:
-                print(char, end="\n\n")
-            else:
                 print("", end="\n\n")
-            check_newline = True
+                check_newline = False
+            print(char, end="\n\n")
         else:
-                print(char, end="")
+            print(char, end="")
