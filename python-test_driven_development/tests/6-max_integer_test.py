@@ -22,5 +22,5 @@ class TestMaxInteger(unittest.TestCase):
         #
         self.assertNotEqual(max_integer([]), 6)
         #
-        #self.assertEqual(max_integer([7], 7))
+        self.assertEqual(max_integer([7]), 7)
         #
