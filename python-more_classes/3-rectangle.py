@@ -48,6 +48,8 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        rec_hash = "#" * self.__width
-        rec_str = (rec_hash + "\n") * self.__height
-        return rec_str
+        rec_str = ""
+        for _ in range(self.__height):
+            print("#" * self.__width)
+            if = (rec_hash + "\n") * self.__height
+            return rec_str
