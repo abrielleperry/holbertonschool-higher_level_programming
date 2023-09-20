@@ -14,14 +14,13 @@ Correct use:
 
 >>> text_indentation("Hello. Tuesday")
 Hello.
-
-
+<BLANKLINE>
 Tuesday
 
 
 >>> text_indentation("How are you? Good")
 How are you?
-
+<BLANKLINE>
 Good
 
     
