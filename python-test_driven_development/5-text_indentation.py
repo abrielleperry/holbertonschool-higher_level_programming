@@ -18,3 +18,4 @@ def text_indentation(text):
             print(char, end="\n\n")
         else:
             print(char, end="")
+            check_newline = False

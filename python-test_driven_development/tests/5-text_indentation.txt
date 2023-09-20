@@ -11,19 +11,23 @@ text_indentation adds 2 new lines after every ., ?, and : module:
 Correct use:
 =============================
 
-
+testing with period
 >>> text_indentation("Hello. Tuesday")
 Hello.
 <BLANKLINE>
 Tuesday
 
-
+testing with question mark
 >>> text_indentation("How are you? Good")
 How are you?
 <BLANKLINE>
 Good
 
-    
+testing with colon
+>>> text_indentation("Color: Green")
+Color:
+<BLANKLINE>
+Green
 
 Incorret Use:
 ===============================
