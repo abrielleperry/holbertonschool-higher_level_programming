@@ -18,7 +18,7 @@ class TestMaxInteger(unittest.TestCase):
         #
         self.assertEqual(max_integer([7]), 7)
         #
-        self.assertEqual(max_integer([]))
+        self.assertIsNone(max_integer())
         
     def test_incorrect_use(self):
         self.assertRaises(TypeError, max_integer((1, 2, 3)))
