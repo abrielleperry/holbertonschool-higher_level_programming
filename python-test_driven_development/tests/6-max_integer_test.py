@@ -20,6 +20,6 @@ class TestMaxInteger(unittest.TestCase):
     def test_incorrect_use(self):
         self.assertRaises(TypeError, max_integer((1, 2, 3)))
         #
-        self.assertNotEqual(max_integer([]),)
+        self.assertNotEqual(max_integer([]), )
         #
         
