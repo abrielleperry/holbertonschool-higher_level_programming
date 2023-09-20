@@ -8,15 +8,15 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    check_newline = False
+    check_newline = True
 
     for char in text:
         if char in [".", "?", ":"]:
-            check_newline = True
-            print(char + "\n\n")
-        else:
             if check_newline:
-                print(char + "\n\n")
-                check_newline = False
+                print(char, end="\n\n")
             else:
+                print("", end="\n\n")
+            check_newline = True
+        else:
                 print(char, end="")
+                check_newline = False
