@@ -7,9 +7,16 @@ def text_indentation(text):
     """text_identation prints a text with 2 new lines"""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-
-    text = text.replace(".", ".\n")
-    text = text.replace("?", "?\n")
-    text = text.replace(":", ":\n")
-
-    print(text)
+    
+    check_newline = False
+    
+    for char in text:
+        if char in [".", "?", ":"]:
+            check_newline = True
+            print(char + "\n\n")
+        else:
+            if check_newline:
+                print(char + "\n\n")
+                check_newline = False
+            else:
+                print(char, end="")
