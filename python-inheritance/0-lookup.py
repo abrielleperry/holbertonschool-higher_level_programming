@@ -12,4 +12,6 @@ def lookup(obj):
     Returns:
         list: list of available attributes and methods of an object
     """
-    return [attr for attr in dir(obj) if callable(getattr(obj, attr)) or not attr.startswith("__")]
+    return [attr for attr in dir(obj) if
+            callable(getattr(obj, attr)) or
+            not attr.startswith("__")]
