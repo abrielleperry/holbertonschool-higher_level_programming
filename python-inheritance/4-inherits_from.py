@@ -3,7 +3,7 @@
 
 
 def inherits_from(obj, a_class):
-    """check if the object is exact instance of class or inherited 
+    """check if the object is exact instance of class or inherited
     (directly or indirectly) from the specified class
 
 
