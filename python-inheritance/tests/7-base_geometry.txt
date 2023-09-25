@@ -7,12 +7,12 @@ Creating a class BaseGeometry for geometry operations
 
 ==================================================
 
-Import:
+Importing:
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
 
-==================================================
+====================================
 
-Testing!!!
 
 Correct use:
 --------------------------------------------------
@@ -26,9 +26,9 @@ Incorret Use:
 Testing for non integer values
 >>> bg.integer_validator("howdy", "y'all")
 Traceback (most recent call last):
-TypeError: <name> must be an integer
+TypeError: howdy must be an integer
 
 Testing for integer less than 0
 >>> bg.integer_validator("negative", -7)
 Traceback (most recent call last):
-ValueError: <name> must be greater than 0
+ValueError: negative must be greater than 0

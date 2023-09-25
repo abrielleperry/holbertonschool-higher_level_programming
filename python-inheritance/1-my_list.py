@@ -2,7 +2,7 @@
 """a module that defines the print_sorted function"""
 
 
-class Mylist(list):
+class MyList(list):
     """Mylist inherited from list
     adds method to print list in ascending order
 
