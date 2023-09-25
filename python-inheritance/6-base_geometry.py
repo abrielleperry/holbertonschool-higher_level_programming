@@ -3,12 +3,11 @@
 
 
 class BaseGeometry:
-    """_summary_
+    """ base class for geometry
     """
     def area(self):
-        """_summary_
-
+        """
         Raises:
-            Exception: _description_
+            Exception: raised if area method is not implemented
         """
         raise Exception("area() is not implemented")
