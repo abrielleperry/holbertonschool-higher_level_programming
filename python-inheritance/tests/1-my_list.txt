@@ -1,4 +1,4 @@
-The "1-my_list.py" module
+The "1-my_list.py" doctest module
 ======================
 
 Creating a class MyList that inherits from list
@@ -7,58 +7,40 @@ Creating a class MyList that inherits from list
 Import my_list function to doctest
 >>> MyList = __import__('1-my_list').MyList
 
+my_list.print_sorted sorted list in ascendig order
+
 Correct use:
 =============================
-
+    Testing for list of all integer elements
     >>> my_list = MyList([5, 7, 12, 3, 24])
-    >>> my_list.print.ascend_sort_list()
+    >>> my_list.print_sorted()
     [3, 5, 7, 12, 24]
 
-    """
-    >>> add_integer(8, 2)
-    10
+    Testing for no elements
+    >>> my_list = MyList([])
+    >>> my_list.print_sorted()
+    []
 
-    >>> add_integer(98)
-    196
+    Testing for one element
+    >>> my_list = MyList([777])
+    >>> my_list.print_sorted()
+    [777]
 
-    >>> add_integer(7.77, 5)
-    12
 
-    >>> add_integer(2.2, 8)
-    10
+
 
 
 Incorret Use:
 ===============================
 
-Testing if a was string
->>> add_integer("hello")
+Testing for not a list
+>>> mylist = MyList(62)
+>>> my_list.print_sorted()
 Traceback (most recent call last):
-TypeError: a must be an integer
+TypeError: int object is not iterable
 
-Testing if be was a string
->>> add_integer(7, "hello")
+Testing for list of elements that are not integers
+>>> mylist = MyList([7, 0, "lucky", 12])
+>>> my_list.print_sorted()
 Traceback (most recent call last):
-TypeError: b must be an integer
-
-Testing if float is infinitie
->>> add_integer(float('inf'), 3)
-Traceback (most recent call last):
-OverflowError: cannot convert float infinity to integer
-
-Testing if float is not a number
->>> add_integer(float('nan'), 3)
-Traceback (most recent call last):
-ValueError: cannot convert float NaN to integer
-
-Testing if no arguments are given
->>> add_integer()
-Traceback (most recent call last):
-TypeError: add_integer() missing 1 required positional argument: 'a'
-
-Testing if more than 2 arguments are given
->>> add_integer(3, 4, 5)
-Traceback (most recent call last):
-TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
-
-"""
+TypeError: does not support instances of str and int 
