@@ -9,7 +9,6 @@ class Mylist(list):
     Args:
         list (list): list to be inheritated from by MyList
     """
-
     def print_sorted(self):
         """prints list in ascending order"""
         print(sorted(self))
