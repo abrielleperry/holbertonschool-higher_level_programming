@@ -2,5 +2,5 @@
 
 def read_file(filename=""):
     with open(filename, encoding="utf-8") as f:
-        print(file.read(), end="")
-        file.close()
+        print(f.read(), end="")
+        f.close()
