@@ -4,6 +4,6 @@ a text file (UTF8) and returns the number of characters added"""
 
 
 def append_write(filename="", text=""):
-    with open(filename, encoding="utf-8") as file:
-        for line(end="") in file:
-            print(append.line)
+    with open(filename, "a", encoding="utf-8") as file:
+        charsadded = file.write(text)
+    return charsadded
