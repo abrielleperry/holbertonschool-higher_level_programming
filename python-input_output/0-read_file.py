@@ -6,7 +6,7 @@ def read_file(filename=""):
     """reads text file
 
     Args:
-        filename (str, optional): Defaults to "".
+        filename (str, optional): file to write to
     """
     with open(filename, encoding="utf-8") as file:
         for line in file:
