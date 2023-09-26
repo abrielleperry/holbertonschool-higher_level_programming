@@ -16,11 +16,11 @@ class Square(Rectangle):
         self.integer_validator("size", size)
         super().__init__(size, size)
 
-
     def __str__(self):
         """_summary_
 
         Returns:
             str: a string of the squares format with width and height
         """
-        return "[Square] {}/{}".format(self._Rectangle__width, self._Rectangle__height)
+        return ("[Square] {}/{}"
+                .format(self._Rectangle__width, self._Rectangle__height))
