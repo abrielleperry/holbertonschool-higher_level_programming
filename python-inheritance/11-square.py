@@ -26,4 +26,9 @@ class Square(Rectangle):
                 .format(self._Rectangle__width, self._Rectangle__height))
 
     def __repr__(self):
+        """representing str instance
+
+        Returns:
+            str: __str__ format
+        """
         return str(self)
