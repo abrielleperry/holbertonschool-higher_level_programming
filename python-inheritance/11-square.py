@@ -22,5 +22,8 @@ class Square(Rectangle):
         Returns:
             str: a string of the squares format with width and height
         """
-        print("[Square] {}/{}"
+        return ("[Square] {}/{}"
                 .format(self._Rectangle__width, self._Rectangle__height))
+
+    def __repr__(self):
+        return str(self)
