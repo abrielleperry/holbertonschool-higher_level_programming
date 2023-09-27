@@ -17,8 +17,8 @@ def pascal_triangle(n):
         row = [1]
         if i > 0:
             prev = tri[i - 1]
-            for e in range(1, i):
-                row.append(prev[e - 1] + prev[e])
+            for j in range(1, i):
+                row.append(prev[j - 1] + prev[j])
             row.append(1)
         tri.append(row)
 
