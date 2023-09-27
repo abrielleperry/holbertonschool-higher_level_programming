@@ -7,10 +7,10 @@ def pascal_triangle(n):
     """
     Returns:returns list w first and last element always being 1
     """
-    if n <= 0:
-        return []
-
     triangle = []
+    if n <= 0:
+        return triangle
+
     for i in range(n):
         row = [1]
         if i > 0:
