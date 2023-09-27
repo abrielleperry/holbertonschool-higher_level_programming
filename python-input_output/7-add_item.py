@@ -14,5 +14,5 @@ except Exception:
 
 for obj in argv[1:]:
     new_list.append(obj)
-else:
+
     save_to_json_file(new_list, "add_item.json")
