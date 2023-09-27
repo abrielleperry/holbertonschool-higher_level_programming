@@ -5,9 +5,7 @@ representing the Pascal’s triangle of n"""
 
 def pascal_triangle(n):
     """
-
     Returns:returns list w first and last element always being 1
-        
     """
     if n <= 0:
         return []
