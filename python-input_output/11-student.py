@@ -31,3 +31,8 @@ class Student:
             if hasattr(self, attr):
                 attrdict[attr] = getattr(self, attr)
         return attrdict
+
+        def reload_from_json(self, json):
+            for key, result in json.content():
+                set_attr(self, key, result)
+
