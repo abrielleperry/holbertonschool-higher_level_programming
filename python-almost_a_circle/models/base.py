@@ -1,7 +1,6 @@
-#!/usr/bin/python
-""" class Base that will be used as a
-template for creating other subclasses
-"""
+#!/usr/bin/python3
+"""class Base that will be used as a
+template for creating other subclasses"""
 
 
 class Base:
