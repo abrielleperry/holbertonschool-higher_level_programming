@@ -80,12 +80,12 @@ class Rectangle(Base):
 
         Args:
             x (int): new x coordinate
-        
+
         Raises:
             TypeError: if value is not integer
             ValueError: if value is less than or equal to 0
         """
-        if not isinstance (value, int):
+        if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
@@ -108,7 +108,7 @@ class Rectangle(Base):
             TypeError: if value is not integer
             ValueError: if value is less than or equal to 0
         """
-        if not isinstance (value, int):
+        if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
