@@ -24,25 +24,53 @@ class Rectangle(Base):
         super().__init__(id)
 
     def get_width(self):
+        """ get_width of rectangle """
         return self.__width
 
     def set_width(self, width):
+        """
+        set_width of rectangle
+
+        Args:
+            width (int): new width of value
+        """
         self.__width = width
 
     def get_height(self):
+        """get_height of rectangle"""
         return self.__height
 
     def set_height(self, height):
+        """
+        set_height of rectangle
+
+        Args:
+            height (int): new height value
+        """
         self.__height = height
 
     def get_x(self):
+        """get_x coordinate of rectangle"""
         return self.__x
 
     def set_x(self, x):
+        """
+        set_x coordinate of rectangle
+
+        Args:
+            x (int): new x coordinate
+        """
         self.__x = x
 
     def get_y(self):
+        """get_y coordinate of rectangle"""
         return self.__y
 
     def set_y(self, y):
+        """
+        set_y coordinate of rectangle
+
+        Args:
+            y (int): new y coordinate of rectangle
+        """
         self.__y = y
