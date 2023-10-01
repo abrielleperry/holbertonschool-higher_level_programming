@@ -35,6 +35,9 @@ class Rectangle(Base):
 
         Args:
             width (int): new width of value
+        Raises:
+            TypeError: if value is not integer
+            ValueError: if value is less than or equal to 0
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -54,6 +57,10 @@ class Rectangle(Base):
 
         Args:
             height (int): new height value
+
+        Raises:
+            TypeError: if value is not integer
+            ValueError: if value is less than or equal to 0
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -73,8 +80,12 @@ class Rectangle(Base):
 
         Args:
             x (int): new x coordinate
+
+        Raises:
+            TypeError: if value is not integer
+            ValueError: if value is less than or equal to 0
         """
-        if not isinstance (value, int):
+        if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value <= 0:
             raise ValueError("x must be > 0")
@@ -92,8 +103,12 @@ class Rectangle(Base):
 
         Args:
             y (int): new y coordinate of rectangle
+
+        Raises:
+            TypeError: if value is not integer
+            ValueError: if value is less than or equal to 0
         """
-        if not isinstance (value, int):
+        if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value <= 0:
             raise ValueError("y must be > 0")
