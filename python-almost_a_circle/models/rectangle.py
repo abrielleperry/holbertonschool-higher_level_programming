@@ -142,6 +142,8 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
+        """update attributes using for loop and if statement
+        """
         attributes = ["id", "width", "height", "x" "y"]
         for i, arg in enumerate(args):
             if i < len(attributes):
