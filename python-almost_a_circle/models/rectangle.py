@@ -142,4 +142,6 @@ class Rectangle(Base):
         )
 
     def update(self, *args):
-        
+        attributes = ["id", "width", "height", "x" "y"]
+        for i, arg in enumerate(args):
+            
