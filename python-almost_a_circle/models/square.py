@@ -17,7 +17,7 @@ class Square(Rectangle):
             y (int): y coordinate of square
             id (int): id of square
         """
-        super().__init__(self, size, x, y, id)
+        super().__init__(size, size, x, y, id)
 
     def __str__(self):
         """string representation of square"""
