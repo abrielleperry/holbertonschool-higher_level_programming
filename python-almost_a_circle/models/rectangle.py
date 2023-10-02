@@ -123,7 +123,7 @@ class Rectangle(Base):
         return self.height * self.width
 
     def display(self):
-        """display the rectangle using #
+        """display the rectangle using # with x and y coordinates
         """
         for _ in range(self.y):
             print()
@@ -140,3 +140,6 @@ class Rectangle(Base):
             f"[Rectangle] ({self.id}) "
             f"{self.x}/{self.y} - {self.width}/{self.height}"
         )
+
+    def update(self, *args):
+        
