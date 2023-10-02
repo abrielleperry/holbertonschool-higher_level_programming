@@ -134,4 +134,7 @@ class Rectangle(Base):
         Returns:
             _str_: string representing rectangle in format
         """
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        return (
+            f"[Rectangle] ({self.id}) "
+            f"{self.x}/{self.y} - {self.width}/{self.height}"
+        )
