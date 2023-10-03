@@ -8,7 +8,7 @@ import json
 
 class Base:
     """ keeps track of number of objects created from this class """
-    __nb_objects = 1
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """
@@ -82,8 +82,10 @@ class Base:
         if dictionary and dictionary != {}:
             if cls.__name__ == "Square":
                 new_instance = (1)
+            elif cls.__name__ == "Rectangle":
+                new_instance = cls(1, 1) 
             else:
-                new_instance = cls(1, 1)
+                new_instance = cls()
 
             new_instance.update(**dictionary)
             return new_instance
