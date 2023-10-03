@@ -73,7 +73,10 @@ class Base:
 
     def create(cls, **dictionary):
         if cls.__name__ == "Rectangle":
-            new_instance = cls(0, 1)
+            new_instance = cls(1, 1)
         elif cls.__name__ == "Square":
             new_instance = (1)
+        else:
+            new_instance= cls()
+            new_instance.update(**dictionary)
             return new_instance
