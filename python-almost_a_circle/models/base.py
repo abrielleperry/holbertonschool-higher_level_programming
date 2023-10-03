@@ -81,7 +81,7 @@ class Base:
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Square":
-                new_instance = (1)
+                new_instance = cls(1)
             else:
                 new_instance = cls(1, 1)
 
