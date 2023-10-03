@@ -52,9 +52,9 @@ class Base:
             list_objs = []
         filename = cls.__name__ + ".json"
         list_dicts = [obj.to_dictionary() for obj in list_objs]
-        json_string = cls.to_json_string(list_dicts)
+        json_str = cls.to_json_string(list_dicts)
         with open(filename, "w") as file:
-            file.write(json_string)
+            file.write(json_str)
 
     @staticmethod
     def from_json_string(json_string):
@@ -87,3 +87,18 @@ class Base:
 
             new_instance.update(**dictionary)
             return new_instance
+    
+    @classmethod
+    def load_from_file(cls):
+        """Update the class Base by adding the class method
+        that returns a list of instances"""
+        file_name = cls.__name__ + ".json"
+
+        try:
+            with open(file_name, "r") as file:
+                json_str = file.read()
+                contents = cls.from_json_string(json_str)
+                instlist = [cls.create(**d) for d in contents]
+        except FileNotFoundError:
+            pass
+        return instlist
