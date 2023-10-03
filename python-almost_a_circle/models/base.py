@@ -2,6 +2,7 @@
 """class Base that will be used as a
 template for creating other subclasses"""
 
+import json
 
 class Base:
     """ keeps track of number of objects created from this class """
@@ -21,3 +22,6 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def to_json_string(list_dictionaries):
+        
