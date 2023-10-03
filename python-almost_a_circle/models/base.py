@@ -70,3 +70,10 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    def create(cls, **dictionary):
+        if cls.__name__ == "Rectangle":
+            new_instance = cls(0, 1)
+        elif cls.__name__ == "Square":
+            new_instance = (1)
+            return new_instance
