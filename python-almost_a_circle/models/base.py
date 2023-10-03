@@ -71,6 +71,7 @@ class Base:
         else:
             return json.loads(json_string)
 
+    @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Rectangle":
             new_instance = cls(1, 1)
@@ -78,5 +79,6 @@ class Base:
             new_instance = (1)
         else:
             new_instance= cls()
-            new_instance.update(**dictionary)
-            return new_instance
+
+        new_instance.update(**dictionary)
+        return new_instance
