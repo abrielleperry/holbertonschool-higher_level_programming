@@ -55,3 +55,5 @@ class Base:
         json_string = cls.to_json_string(list_dicts)
         with open(filename, "w") as file:
             file.write(json_string)
+
+    def from_json_string(json_string):
