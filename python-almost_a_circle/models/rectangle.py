@@ -4,6 +4,7 @@
 from models.base import Base
 
 
+
 class Rectangle(Base):
     """call superclass constructer with id"""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -169,9 +170,9 @@ class Rectangle(Base):
             dict: dictionary containing attrivutes of rectangle
         """
         return {
+            "y": self.y,
+            "x": self.x,
             "id": self.id,
             "width": self.width,
-            "height": self.height,
-            "x": self.x,
-            "y": self.y
+            "height": self.height
         }
