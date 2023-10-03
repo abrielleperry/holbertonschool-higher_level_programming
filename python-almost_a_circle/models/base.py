@@ -42,6 +42,12 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """class method to save list tof instances to json file
+
+        Args:
+            list_objs (list): list of instances to be saved to file,
+            if none an empty list will be saved
+        """
         if list_objs is None:
             list_objs = []
         filename = cls.__name__ + ".json"
