@@ -87,7 +87,7 @@ class Base:
 
             new_instance.update(**dictionary)
             return new_instance
-    
+
     @classmethod
     def load_from_file(cls):
         """Update the class Base by adding the
