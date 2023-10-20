@@ -1,2 +1,2 @@
---creates~
+--creates
 SHOW DATABASES
