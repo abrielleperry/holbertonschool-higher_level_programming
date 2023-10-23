@@ -1,5 +1,5 @@
 -- creates table called second_table in current database hbtn_0c_0 with rows and columns
-CREATE TABLE second_table(
+CREATE TABLE IF NOT EXISTS second_table(
   id INT,
   name VARCHAR(256),
   score INT
