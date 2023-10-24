@@ -1,4 +1,4 @@
-#!/usr/bin/Python
+#!/usr/bin/Python3
 """prints states from database"""
 
 import MySQLdb
