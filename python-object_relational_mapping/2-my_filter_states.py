@@ -18,12 +18,12 @@ def state_name_searched():
     )
     cursor = db.cursor()
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE %s ORDER BY id",
-        (argv[4],)
+        "SELECT * FROM states WHERE BINARY name = '{}'"
+        .format(argv[4])
     )
     all_data = cursor.fetchall()
-    for row in all_data:
-        print(row)
+    for state in all_data:
+        print(state)
 
     cursor.close()
     db.close()
