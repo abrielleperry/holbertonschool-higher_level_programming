@@ -22,8 +22,9 @@ def state_name_searched():
         (argv[4],)
     )
     all_data = cursor.fetchall()
-    for state in all_data:
-        print(state)
+    for row in all_data:
+        print(row)
+
     cursor.close()
     db.close()
 
