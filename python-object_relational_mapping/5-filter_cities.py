@@ -7,6 +7,7 @@ from sys import argv
 
 
 def show_state_name():
+    """take 4 args: username, password, database name and state name"""
     db = MySQLdb.connect(
         host='localhost',
         port=3306,
