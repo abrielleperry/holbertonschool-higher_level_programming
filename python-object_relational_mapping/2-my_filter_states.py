@@ -7,7 +7,8 @@ import MySQLdb
 from sys import argv
 
 
-if __name__ == '__main__':
+def state_name_searched():
+    """takes 4 args: username, password, database and state_name_searched"""
     db = MySQLdb.connect(
         host='localhost',
         port=3306,
@@ -17,8 +18,15 @@ if __name__ == '__main__':
     )
     cursor = db.cursor()
     cursor.execute(
-      "SELECT * FROM states.hbtn_0e_0_usa WHERE name LIKE %s AS id"
+        "SELECT * FROM states WHERE name LIKE %s ORDER BY id",
+        (argv[4],)
     )
     all_data = cursor.fetchall()
-    for row in all_data:
-        print(row)
+    for state in all_data:
+        print(state)
+    cursor.close()
+    db.close()
+
+
+if __name__ == '__main__':
+    state_name_searched()
