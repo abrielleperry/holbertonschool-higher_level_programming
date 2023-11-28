@@ -1,7 +1,9 @@
 #!/usr/bin/node
 const x = parseInt(parse.argv[2]);
 if (isNaN(x)) {
-  console.log('Missing number of occurrences')
+  console.log('Missing number of occurrences');
 } else {
-  (x * 'C is fun');
-console.log(x * 'C is fun')
+  for (const i = 0; i < x; i++) {
+    console.log('C is fun');
+  }
+}
