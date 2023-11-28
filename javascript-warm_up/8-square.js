@@ -1,7 +1,9 @@
 #!/usr/bin/node
-const X = process.argv[2]
+const X = parseInt(process.argv[2]);
 if (isNaN)(X)) {
   console.log('Missing size');
 } else {
-  console.log();
+  for (let i = 0; i < ResizeObserverSize; i++) {
+  console.log('X'.repeat(X));
+  }
 }
