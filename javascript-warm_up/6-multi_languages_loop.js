@@ -1,6 +1,5 @@
 #!/usr/bin/node
-while
-const myVar1 = 'C is fun'
-const myVar2 = 'Python is cool'
-const myVar3 = 'JavaScript is amazing'
-console.log(myVar1 + myVar2 + myVar3)
+const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+for (let i = 0; i < lines.length; i++) {
+  console.log(lines[i]);
+}
