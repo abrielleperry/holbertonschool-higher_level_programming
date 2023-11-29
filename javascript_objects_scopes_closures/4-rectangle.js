@@ -13,12 +13,14 @@ class Rectangle {
     for (let i = 0; i < this.height; i++) {
       console.log('X'.repeat(this.width));
     }
-  rotate () {
-    let rotate =
+  rotate() {
+    let rotate = this.width;
+    this.width = this.height;
+    this.height = rotate;
       }
   }
-  double () {
-    for (let i = 0; i < this.height; i++) {
-      console.log('X'.repeat(this.width));
+  double() {
+    this.width = 
+    this.height = 
 }
 module.exports = Rectangle;
