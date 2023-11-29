@@ -13,14 +13,17 @@ class Rectangle {
     for (let i = 0; i < this.height; i++) {
       console.log('X'.repeat(this.width));
     }
-  rotate() {
-    let rotate = this.width;
+  }
+
+  rotate () {
+    const rotate = this.width;
     this.width = this.height;
     this.height = rotate;
-      }
   }
-  double() {
-    this.width = 
-    this.height = 
+
+  double () {
+    this.width *= 2;
+    this.height *= 2;
+  }
 }
 module.exports = Rectangle;
